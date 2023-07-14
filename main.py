@@ -6,7 +6,7 @@ def find_unique_character(text):
     unique_chars = []
 
     for word in text.split():
-        chars = list(word.lower())  # or list(word.lower())
+        chars = list(word)  # or list(word.lower())
 
         for char in chars:
             if chars.count(char) == 1:
